@@ -75,6 +75,11 @@ body .buy_item .price {
   background-color: #FFC954;
 }
 
+html .buy_item .price::after,
+body .buy_item .price::after {
+  content: "$";
+}
+
 html .buy_item .del_btn,
 body .buy_item .del_btn {
   display: inline-block;

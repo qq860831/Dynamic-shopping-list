@@ -64,9 +64,9 @@ body {
             right: 50px;
             background-color: #FFC954;
         }
-        // .price::after{
-        //     content: "$";
-        // }
+        .price::after{
+            content: "$";
+        }
         .del_btn{
             display: inline-block;
             position: absolute;
