@@ -1,3 +1,7 @@
+var
+itemurl="https://awiclass.monoame.com/api/command.php?type=get&name=itemdata";
+
+
 //新增一個商品清單的物件
 var shoplist={};
 shoplist.name="MyBuylist 購物清單";
@@ -10,6 +14,14 @@ shoplist.list=[
   {name: "Iphone 9",price: 32000},
   {name: "神奇海螺",price: 5000}
 ];
+
+$.ajax({
+    url:itemurl,
+    success: function(res){
+        shoplist.list=(JSON.parse(res));
+        showlist();
+    }
+});
 
 
 //定義元素用的html模板，{{名稱}}代表要套入的地方
@@ -28,7 +40,7 @@ function showlist(){
     var del_item_id="del_buyitem_"+i;
     
     //動態統計總價(每一項跑時加上去)
-    // parseInt表示把文字改成數值
+    // 
     total_price+=parseInt(item.price);
     
     //取代模板位置成資料replace(要取代的,取代成...)
