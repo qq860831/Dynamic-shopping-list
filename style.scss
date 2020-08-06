@@ -1,0 +1,30 @@
+$color_black: #444;
+$color_yellow: #FFC954;
+$color_red: #FF3D4A;
+$color_white: #f3f3f3;
+
+* {
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif, "微軟正黑體";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //flex、justify-content、align-items可讓元件置中畫面的方式，但是元件必須inline-block
+    background-color: $color_yellow;
+
+    #buylist {
+        display: inline-block;
+        padding: 20px;
+        border: solid 4px $color_black;
+        background-color: $color_white;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    }
+
+}
