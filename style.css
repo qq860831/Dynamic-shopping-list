@@ -30,4 +30,77 @@ body #buylist {
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
+
+html h1,
+body h1 {
+  padding: 10px 20px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-bottom: solid 4px #444;
+  background-color: #FF3D4A;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+html #items_list,
+body #items_list {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+html .buy_item,
+body .buy_item {
+  padding: 5px;
+  list-style: none;
+  border: solid 3px #444;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+html .buy_item input,
+body .buy_item input {
+  width: 100px;
+  border: solid 3px;
+  padding: 2px;
+}
+
+html .buy_item .price,
+body .buy_item .price {
+  display: inline-block;
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+  background-color: #FFC954;
+}
+
+html .buy_item .del_btn,
+body .buy_item .del_btn {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 6px;
+  right: 10px;
+  cursor: pointer;
+}
+
+html .buy_item .del_btn:hover,
+body .buy_item .del_btn:hover {
+  background-color: #444;
+  color: #f3f3f3;
+}
+
+html .buy_item .addbtn,
+body .buy_item .addbtn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border: solid 3px #444;
+}
+
+html .buy_item .addbtn:hover,
+body .buy_item .addbtn:hover {
+  background-color: #444;
+  color: #f3f3f3;
+}
 /*# sourceMappingURL=style.css.map */
